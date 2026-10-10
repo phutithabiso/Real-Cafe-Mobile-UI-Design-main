@@ -18,6 +18,7 @@ justify-content: center;
 align-items: center;
 }
 .container{
+    margin-top: 20px;
     max-width:  374px;
     background: #201520;
     border-radius: 24px;
@@ -28,7 +29,7 @@ align-items: center;
    position: relative;
    border-radius: 23.86px;
    width: 100%;
-   height: 280px;
+   height: 320px ;
    flex-shrink: 0;
 }
 .image1{
@@ -63,7 +64,7 @@ border-radius: 23.86px;
     flex-direction: column;
     gap: 0;
     
-  padding: 17px 21px 21px;
+  padding: 12px;
 
 
 }
@@ -99,28 +100,41 @@ color: #FFFFFF;
     align-items: center;
     gap: 11px;
     margin-bottom: 11px;
- flex-wrap: nowrap;
+
 }
-.info2, p{
-    font-family: Rosarivo;
-    font-size: 14.31px;
-    color: #FFFFFF;
-    white-space: nowrap;
-}
+
 .rating{
     display: flex;
-   gap: 4px;
+   gap: 6px;
    align-items: center;
 color: #e0d5c8;
-  flex-shrink: 0;
+
    
+}
+.description{
+    font-family: Raleway;
+    font-size: 9.5px;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+
+}
+.btn-capacino{
+    
+  margin-left: 10px;
+}
+
+.titles{
+    font-family: Rasarivo;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 12px;
 }
 
 .btn-oats{
 border-radius: 5.96px;
 background: #EFE3C8;
 border: 1px solid #EFE3C8;
-gap: 6px;
  padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -131,27 +145,57 @@ gap: 6px;
     font-size: 14px;
     border-radius: 5.96px;
     border: 1px solid #EFE3C8;
-    color: #EFE3C8;
+    color:#EFE3C8;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: #201520;
 }
-.price-container{
-    margin: 4px;;
-}
-.buy{  
-border-radius: 5.96px;
-background: #EFE3C8;
-border: 1px solid #EFE3C8;
-gap: 6px;
-font-size: 20px;
-padding-left: 65px;
-padding-right: 65px;
-margin-top: 19px;
-margin-bottom: 19px;
-margin-left: 40px;
-
+.price-container {
+  display: flex;
+  flex-direction: row;        
+  gap: 50px;
+  align-items: center;         
+ margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 4px;
 }
 
+.prices {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;               /* don't shrink the price */
+}
+
+.pr {
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  color: #a89b8c;
+  line-height: 1.2;
+}
+
+.prv {
+  font-family: "Rosarivo", serif;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.btn-buy {
+  flex: 1;                      
+  display: flex;
+  
+  max-width: 230px;
+  border-radius: 10px;
+  background: #efe3c8;
+  color: #201520;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 600;
+align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  text-decoration: none;
+  white-space: nowrap;        
+}
